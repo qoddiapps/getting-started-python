@@ -9,7 +9,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
     def do_GET(self):
         self.send_response(HTTPStatus.OK)
         self.end_headers()
-        msg = 'Python is running on FlashDrive! You requested %s' % (self.path)
+        msg = 'Python is running on Qoddi! You requested %s' % (self.path)
         self.wfile.write(msg.encode())
 
 
